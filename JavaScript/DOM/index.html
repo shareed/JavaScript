@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        width: 80%;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: 30%;
+    }
+    .red-square {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+    }
+
+    .color-box {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+  }
+  </style>
+<body>
+    <h1>The DOM</h1>
+        <section>
+            <p>
+                
+            </p>
+            <div class="red-square"></div>
+        </section>
+        <section>
+            <ul>
+                <li class="js-target">Unchanged</li>
+                <li class="js-target">Unchanged</li>
+                <li>Won't Change</li>
+                <li class="js-target">Unchanged</li>
+                <li>Won't Change</li>
+                <li class="js-target">Unchanged</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h1>Events and Listeners</h1>
+        <button class="event-button">Click me!</button>
+        </section>
+        <hr>
+        <section>
+            <p>
+                Try typing into the input. You'll see whatever text you type 
+                into the input will instantly be reflected in the p tag. 
+            </p>
+            <input placeholder="type into me!" class="input-to-copy" />
+            <p class="p-to-copy-to">Nothing has happened yet.</p>
+        </section>
+        <hr>
+        <section>
+            <p>
+                Similar to above. The key difference here is that we're listening 
+                for change events. change events happen whenever a user types 
+                something in the input and then unfocuses the input by clicking 
+                somewhere else or hitting tab to change the focus. Try typing "red" 
+                and then clicking somewhere else. Also, try something that isn't a 
+                color. Notice that if you give it an invalid color it just doesn't 
+                change anything.
+            </p>
+            <div class="color-box"></div>
+            <input class="color-input" placeholder="Type a color here!" />
+        </section>
+        <hr>
+        <scetion >
+            <h1>Event Delegation</h1>
+            <p>
+                If you have a bunch of elements that you need to listen for events on, 
+                you could attach an event listener to each but that's a bit tedious to 
+                do. Instead what is sometimes easier to do is to use what's called event
+                 bubbling. When event fires on an element, after that "bubbles" up to its 
+                 parent, and then its parent, and its parent, etc. until it's at the root element.
+            </p>
+            <div class="button-container">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </div>
+        </scetion>
+        <hr>
+
+        <section>
+            <h1>event.stopPropagation</h1>
+            <h1>event.preventDefault</h1>
+        </section>
+
+
+
+
+    <script src='dom.js'></script>
+</body>
+</html>

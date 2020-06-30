@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Animation</title>
+  <link href="/animation.c82142a8.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1>Animation</h1>
+  <div class="box"></div>
+  <script src="/animation.d1f8ce21.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "BuildingYourCode",
+  "version": "1.0.0",
+  "description": "[Install Node](https://nodejs.org/en/)\r * Node is JS on the server\r * Node comes with npm, a package manager for node\r * [Parcel](https://parceljs.org/) `npm install --global parcel-bundler`: a tool that helps you bundle your JS",
+  "main": "animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "popmotion": "^8.7.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}
